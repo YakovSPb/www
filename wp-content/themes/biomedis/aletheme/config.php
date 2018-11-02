@@ -37,12 +37,6 @@ function aletheme_get_options() {
         "std" => "",
         "type" => "upload");
 
-    $options[] = array( "name" => "Site Footer Logo",
-        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
-        "id" => "ale_sitelogofooter",
-        "std" => "",
-        "type" => "upload");
-
     $options[] = array( "name" => "Insert The Slider Slug",
         "desc" => "Get the slug on the Sliders Setting Page.",
         "id" => "ale_homesliderslug",
@@ -87,11 +81,6 @@ function aletheme_get_options() {
         "std" => "1",
         "type" => "checkbox");
 
-    $options[] = array( "name" => "Copyrights",
-        "desc" => "Your copyright message.",
-        "id" => "ale_copyrights",
-        "std" => "",
-        "type" => "editor");
 
     $options[] = array( "name" => "Home Page Slider slug",
         "desc" => "Insert the slider slug. Get the slug on Sliders Section",
@@ -104,6 +93,58 @@ function aletheme_get_options() {
         "id" => "ale_blogslugfull",
         "std" => "",
         "type" => "text");
+
+    $options[] = array( "name" => "Footer Option",
+        "type" => "heading");
+
+    $options[] = array( "name" => "Footer Address Label",
+        "desc" => "Insert footer address label",
+        "id" => "ale_footer_address_label",
+        "std" => "Адрес офиса:",
+        "type" => "text");
+
+    $options[] = array( "name" => "Footer Adress",
+        "desc" => "Insert the adress",
+        "id" => "ale_footer_address",
+        "std" => "г.Уфа, ул. 50 лет СССР, д.5",
+        "type" => "text");
+
+    $options[] = array( "name" => "Footer Telefon Number Label",
+        "desc" => "Insert footer address label",
+        "id" => "ale_footer_telefon_label",
+        "std" => "Телефон:",
+        "type" => "text");
+
+    $options[] = array( "name" => "Footer Telefon Number",
+        "desc" => "Insert the telefon number",
+        "id" => "ale_footer_telefon",
+        "std" => "+7-987-104-98-98",
+        "type" => "text");
+
+    $options[] = array( "name" => "Footer Email Label",
+        "desc" => "Insert footer email label",
+        "id" => "ale_footer_email_label",
+        "std" => "Почта:",
+        "type" => "text");
+
+    $options[] = array( "name" => "Footer Email",
+        "desc" => "Insert the telefon number",
+        "id" => "ale_footer_email",
+        "std" => "doctorlila1959@gmail.com",
+        "type" => "text");
+
+    $options[] = array( "name" => "Site Footer Logo",
+        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
+        "id" => "ale_sitelogofooter",
+        "std" => "",
+        "type" => "upload");
+
+    $options[] = array( "name" => "Copyrights",
+        "desc" => "Your copyright message.",
+        "id" => "ale_copyrights",
+        "std" => "",
+        "type" => "editor");
+
 
     $options[] = array( "name" => "Typography",
         "type" => "heading");
@@ -181,66 +222,22 @@ function aletheme_get_options() {
     $options[] = array( "name" => "Social",
         "type" => "heading");
 
-    $options[] = array( "name" => "Twitter",
-        "desc" => "Your twitter profile URL.",
-        "id" => "ale_twi",
-        "std" => "",
+    $options[] = array( "name" => "Vkontakte",
+        "desc" => "Your VK profile URL.",
+        "id" => "ale_vk",
+        "std" => "http://vk.com/",
         "type" => "text");
     $options[] = array( "name" => "Facebook",
         "desc" => "Your facebook profile URL.",
         "id" => "ale_fb",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Google+",
-        "desc" => "Your google+ profile URL.",
-        "id" => "ale_gog",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Pinterest",
-        "desc" => "Your pinteres profile URL.",
-        "id" => "ale_pint",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Flickr",
-        "desc" => "Your flickr profile URL.",
-        "id" => "ale_flickr",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Linkedin",
-        "desc" => "Your linked profile URL.",
-        "id" => "ale_linked",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Instagram",
-        "desc" => "Your instagram profile URL.",
-        "id" => "ale_insta",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Email",
-        "desc" => "Your email",
-        "id" => "ale_emailcont",
-        "std" => "",
-        "type" => "text");
-    $options[] = array( "name" => "Show RSS",
-        "desc" => "Check if you want to show the RSS icon on your site",
-        "id" => "ale_rssicon",
-        "std" => "1",
-        "type" => "checkbox");
-
-
-    $options[] = array( "name" => "Facebook Application ID",
-        "desc" => "If you have Application ID you can connect the blog to your Facebook Profile and monitor statistics there.",
-        "id" => "ale_fb_id",
-        "std" => "",
+        "std" => "http://facebook.com/",
         "type" => "text");
 
-    $options[] = array( "name" => "Enable Open Graph",
-        "desc" => "The <a href=\"http://www.ogp.me/\">Open Graph</a> protocol enables any web page to become a rich object in a social graph.",
-        "id" => "ale_og_enabled",
-        "std" => "",
-        "type" => "checkbox");
-
-
+    $options[] = array( "name" => "Youtube",
+        "desc" => "Your Youtube profile URL.",
+        "id" => "ale_you",
+        "std" => "https://www.youtube.com/",
+        "type" => "text");
 
     $options[] = array( "name" => "Advanced Settings",
         "type" => "heading");

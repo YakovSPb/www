@@ -388,13 +388,13 @@ footer {
 
   }
 
-  #footer{
+  #ale_footer{
     max-width: 960px;
     margin: auto;
     padding: 10px 0;
     min-height: 90px;
 
-    #footer-logo {
+    #ale_footer-logo {
       float:left;
       margin-top: 10px;
       font-size: 10px;
@@ -404,11 +404,14 @@ footer {
 
 
     a {
-      color:white;
-
+      color:inherit;
+      text-decoration:underline;
+      &:hover {
+        text-decoration:none;
+      }
     }
 
-    #contact {
+    #ale_contact {
       float:left;
       width:25%;
       color:#fff;
@@ -416,6 +419,10 @@ footer {
 
       .con{
         margin-top:5px;
+
+        span {
+          font-weight:bold
+        }
       }
 
     }
@@ -427,9 +434,15 @@ footer {
     width:25%;
     margin-right:20px;
 
-    div {
-      display: inline-block;
+    .footermenu {
+
       margin-right: 30px;
+
+      li {
+        display:block;
+        width:49%;
+        float:left;
+      }
     }
 
     a {

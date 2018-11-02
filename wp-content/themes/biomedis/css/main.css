@@ -298,39 +298,50 @@ footer h3 {
   border-bottom: 1px solid #919191;
   margin: 0 0 10px 0;
 }
-footer #footer {
+footer #ale_footer {
   max-width: 960px;
   margin: auto;
   padding: 10px 0;
   min-height: 90px;
 }
-footer #footer #footer-logo {
+footer #ale_footer #ale_footer-logo {
   float: left;
   margin-top: 10px;
   font-size: 10px;
   width: 18%;
   color: #fff;
 }
-footer #footer a {
-  color: white;
+footer #ale_footer a {
+  color: inherit;
+  text-decoration: underline;
 }
-footer #footer #contact {
+footer #ale_footer a:hover {
+  text-decoration: none;
+}
+footer #ale_footer #ale_contact {
   float: left;
   width: 25%;
   color: #fff;
   margin-right: 20px;
 }
-footer #footer #contact .con {
+footer #ale_footer #ale_contact .con {
   margin-top: 5px;
+}
+footer #ale_footer #ale_contact .con span {
+  font-weight: bold;
 }
 footer #sitemap {
   float: left;
   width: 25%;
   margin-right: 20px;
 }
-footer #sitemap div {
-  display: inline-block;
+footer #sitemap .footermenu {
   margin-right: 30px;
+}
+footer #sitemap .footermenu li {
+  display: block;
+  width: 49%;
+  float: left;
 }
 footer #sitemap a {
   color: #dbdbdb;
