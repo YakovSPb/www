@@ -4,103 +4,86 @@
  */
 get_header(); ?>
     <!-- Content -->
-    <div class="about-center-align">
+ <div class="aboutus">
+     <?php
+     if ( has_nav_menu( 'footer_menu' ) ) {
+         wp_nav_menu(array(
+             'theme_location'=> 'footer_menu',
+             'menu'			=> 'Footer Menu',
+             'menu_class'	=> 'footermenu cf',
+             'walker'		=> new Aletheme_Nav_Walker(),
+             'container'		=> '',
+         ));
+     }
+     ?>
+ </div>
 
-        <div class="content-left">
-            <?php if ( has_nav_menu( 'aboutpage_menu' ) ) {
-                wp_nav_menu(array(
-                    'theme_location'=> 'aboutpage_menu',
-                    'menu'			=> 'About Page Menu',
-                    'menu_class'	=> 'nav cf',
-                    'walker'		=> new Aletheme_Nav_Walker(),
-                    'container'		=> '',
-                ));
-            } ?>
 
-            <ul class="peoples">
-                <?php if(ale_get_meta('memname1')){ ?>
-                    <li>
-                        <div style="background-image: url('<?php echo ale_get_meta('memava1'); ?>');" class="avatar"></div>
-                        <h2><a class="click"><?php echo ale_get_meta('memname1'); ?></a></h2>
-                        <p><?php echo ale_get_meta('memprof1'); ?></p>
 
-                        <ul class="social">
-                            <?php if(ale_get_meta('memfb1')){ ?><li class="facebook"><a href="<?php echo ale_get_meta('memfb1'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memtw1')){ ?><li class="twitter"><a href="<?php echo ale_get_meta('memtw1'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memem1')){ ?><li class="mail"><a href="mainlto:<?php echo ale_get_meta('memem1'); ?>" ></a></li><?php } ?>
-                        </ul>
+    <div class="as">
+        <aside>
+            <nav>
+                <ul class="aside-menu">
+                    <li class="active">Продукция 1
+                    <li><a href="/donec/">Продукция 2</a>
+                    <li><a href="/vestibulum/">Продукция 3</a>
+                    <li><a href="/etiam/">Продукция 4</a></li>
+                    <li><a href="/phasellus/">Продукция 5</a>
+                    <li><a href="/cras/">Продукция 6</a>
+                </ul>
+            </nav>
 
-                        <div class="dynamic-text" style="display: none">
-                            <div class="h2"><?php _e('About','aletheme'); ?> <?php echo ale_get_meta('memname1'); ?></div>
-                            <?php ale_filtered_meta('memdesc1'); ?>
-                        </div>
-                    </li>
-                <?php } ?>
-                <?php if(ale_get_meta('memname2')){ ?>
-                    <li>
-                        <div style="background-image: url('<?php echo ale_get_meta('memava2'); ?>');" class="avatar"></div>
-                        <h2><a class="click"><?php echo ale_get_meta('memname2'); ?></a></h2>
-                        <p><?php echo ale_get_meta('memprof2'); ?></p>
+            <h2>Мой оффис</h2>
+            <p><img src="images/map.png" width="230" height="180" alt="Мой оффис"></p>
+        </aside>
+    </div>
+    <div class="content">
+        <section>
+            <blockquote>
+                <p>Как суконщики чистят сукна, выбивая их от пыли, так гимнастика очищает организм.</p>
+                <cite>Гиппократ</cite>
+            </blockquote>
+        </section>
 
-                        <ul class="social">
-                            <?php if(ale_get_meta('memfb2')){ ?><li class="facebook"><a href="<?php echo ale_get_meta('memfb2'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memtw2')){ ?><li class="twitter"><a href="<?php echo ale_get_meta('memtw2'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memem2')){ ?><li class="mail"><a href="mainlto:<?php echo ale_get_meta('memem2'); ?>" ></a></li><?php } ?>
-                        </ul>
-
-                        <div class="dynamic-text" style="display: none">
-                            <div class="h2"><?php _e('About','aletheme'); ?> <?php echo ale_get_meta('memname2'); ?></div>
-                            <?php ale_filtered_meta('memdesc2'); ?>
-                        </div>
-                    </li>
-                <?php } ?>
-                <?php if(ale_get_meta('memname3')){ ?>
-                    <li>
-                        <div style="background-image: url('<?php echo ale_get_meta('memava3'); ?>');" class="avatar"></div>
-                        <h2><a class="click"><?php echo ale_get_meta('memname3'); ?></a></h2>
-                        <p><?php echo ale_get_meta('memprof3'); ?></p>
-
-                        <ul class="social">
-                            <?php if(ale_get_meta('memfb3')){ ?><li class="facebook"><a href="<?php echo ale_get_meta('memfb3'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memtw3')){ ?><li class="twitter"><a href="<?php echo ale_get_meta('memtw3'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memem3')){ ?><li class="mail"><a href="mainlto:<?php echo ale_get_meta('memem3'); ?>" ></a></li><?php } ?>
-                        </ul>
-
-                        <div class="dynamic-text" style="display: none">
-                            <div class="h2"><?php _e('About','aletheme'); ?> <?php echo ale_get_meta('memname3'); ?></div>
-                            <?php ale_filtered_meta('memdesc3'); ?>
-                        </div>
-                    </li>
-                <?php } ?>
-                <?php if(ale_get_meta('memname4')){ ?>
-                    <li>
-                        <div style="background-image: url('<?php echo ale_get_meta('memava4'); ?>');" class="avatar"></div>
-                        <h2><a class="click"><?php echo ale_get_meta('memname4'); ?></a></h2>
-                        <p><?php echo ale_get_meta('memprof4'); ?></p>
-
-                        <ul class="social">
-                            <?php if(ale_get_meta('memfb4')){ ?><li class="facebook"><a href="<?php echo ale_get_meta('memfb4'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memtw4')){ ?><li class="twitter"><a href="<?php echo ale_get_meta('memtw4'); ?>" ></a></li><?php } ?>
-                            <?php if(ale_get_meta('memem4')){ ?><li class="mail"><a href="mainlto:<?php echo ale_get_meta('memem4'); ?>" ></a></li><?php } ?>
-                        </ul>
-
-                        <div class="dynamic-text" style="display: none">
-                            <div class="h2"><?php _e('About','aletheme'); ?> <?php echo ale_get_meta('memname4'); ?></div>
-                            <?php ale_filtered_meta('memdesc4'); ?>
-                        </div>
-                    </li>
-                <?php } ?>
-            </ul>
+        <div class="fig">
+            <figure>
+                <img src="images/lia_01.jpg" width="320" height="175" alt="">
+            </figure>
+            <figure>
+                <img src="images/lia_02.jpg" width="320" height="175" alt="">
+            </figure>
         </div>
+        <p>Какие болезни лечит терапевт? Этот врач может лечить самостоятельно без помощи других такие заболевания, как вирусные инфекции, простудные заболевания, гипертония, болезни сердца и многое другое. Если болезни внутренних органов не требуют хирургического вмешательства, то тогда за дело берется врач-терапевт. Он назначает соответствующие обследования. После чего врач самостоятельно принимает решение о назначении того или иного препарата.</p>
+        <p>Для эффективного лечения требуется правильная диагностика, основанная на систематическом обследовании пациента, анализе анамнеза, жалоб и объективных признаков заболевания (выявляемых при физикальном обследовании — осмотре, пальпации, перкуссии, аускультации, а также с помощью рутинных лабораторно-инструментальных методов). Выявленные признаки (симптомы) заболевания терапевт объединяет в синдромы (совокупность симптомов, имеющих единый патогенез), на основании которых делает заключение о предполагаемом заболевании. В случае невозможности сделать однозначный вывод об имеющемся заболевании, проводится дифференциальная диагностика нескольких схожих заболеваний с выполнением дополнительных лабораторных и инструментальных исследований. В некоторых сложных для диагностики клинических случаях назначается пробное лечение, позволяющее поставить так называемый лат. diagnosis ex juvantibus (диагноз, основанный на оценке результатов проведённого лечения). После постановки диагноза терапевт назначает лечение. Применяются нелекарственные методы лечения (соблюдение режима труда и быта, питания), лекарственное и физиотерапевтическое лечение, санаторно-курортное лечение.</p>
 
-        <div class="content-right">
-            <!-- BY DEFAULT HERE ELENE MARLENE -->
-            <div class="text">
-                <div class="h2"><?php the_title(); ?></div>
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <?php the_content(); ?>
-                <?php endwhile; endif; ?>
+        <p>Параллельно с дифференциацией научных знаний по внутренним болезням, возрастает роль этого раздела медицины в интеграции научных исследований с общетерапевтической подготовкой врача. Параллельность процессов дифференциации и интеграции научных знаний способствуют формированию тесных связей с рядом естественных и технических наук (биологией, физиологией, физикой, химией и т. д.), что позволяет внедрять в клиническую практику новейшие высокотехнологичные методы обследования пациентов (эндоскопию, мониторное наблюдение, компьютерную, позитронно-эмиссионную и магнитно-резонансную томографию и др.)</p>
+
+        <div class="production_footer">
+            <h2>Продукция</h2>
+            <div class="pro">
+                <figure>
+                    <img src="images/sample2.png" width="96" height="96" alt="">
+                    <figcaption><div>Товар 1</div><span>25000 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sample2.png" width="96" height="96" alt="">
+                    <figcaption><div>Товар 2</div><span>25000 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sample2.png" width="96" height="96" alt="">
+                    <figcaption><div>Товар 3</div><span>25000 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sample2.png" width="96" height="96" alt="">
+                    <figcaption><div>Товар 4</div><span>25000 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sample2.png" width="96" height="96" alt="">
+                    <figcaption><div>Товар 4</div><span>25000 руб.</span></figcaption>
+                </figure>
             </div>
         </div>
     </div>
+    </div>
+    <div class="clear"></div>
 <?php get_footer(); ?>
