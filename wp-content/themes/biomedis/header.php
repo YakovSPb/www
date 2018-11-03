@@ -69,6 +69,6 @@
         </section>
         <?php } ?>
     <div id="heading">
-        <h1>Обо мне</h1>
+        <h1><?php the_title();?></h1>
     </div>
     </header>

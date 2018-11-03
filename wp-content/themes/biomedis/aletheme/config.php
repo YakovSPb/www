@@ -106,7 +106,7 @@ function aletheme_get_options() {
     $options[] = array( "name" => "Footer Adress",
         "desc" => "Insert the adress",
         "id" => "ale_footer_address",
-        "std" => "г.Уфа, ул. 50 лет СССР, д.5",
+        "std" => "г. Уфа, ул. 50 лет СССР, д.5",
         "type" => "text");
 
     $options[] = array( "name" => "Footer Telefon Number Label",
@@ -128,7 +128,7 @@ function aletheme_get_options() {
         "type" => "text");
 
     $options[] = array( "name" => "Footer Email",
-        "desc" => "Insert the telefon number",
+        "desc" => "Insert the email",
         "id" => "ale_footer_email",
         "std" => "doctorlila1959@gmail.com",
         "type" => "text");
@@ -148,20 +148,6 @@ function aletheme_get_options() {
 
     $options[] = array( "name" => "Typography",
         "type" => "heading");
-
-    $options[] = array( "name" => "Select the Font One from Google Library",
-        "desc" => "The default Font is - Tahoma",
-        "id" => "ale_font_one",
-        "std" => "Tahoma",
-        "type" => "select",
-        "options" => $headerfont);
-
-    $options[] = array( "name" => "Select the Font One (Extended) from Google Library",
-        "desc" => "The default Font (extended) is - ",
-        "id" => "ale_font_one_ex",
-        "std" => "",
-        "type" => "text",
-    );
 
     $options[] = array( "name" => "Select Font Two from Google Library",
         "desc" => "The default Font is - Oswald",
