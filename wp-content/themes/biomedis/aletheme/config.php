@@ -337,6 +337,31 @@ function aletheme_metaboxes($meta_boxes) {
     );
 
     $meta_boxes[] = array(
+        'id'         => 'products_page_metabox',
+        'title'      => 'Products Meta Options',
+        'pages'      => array( 'products', ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+      //  'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+
+        'fields' => array(
+            array(
+                'name' => 'Products short title',
+                'desc' => 'Type here the short title',
+                'id'   => $prefix . 'prod_title',
+                'type' => 'text_small',
+            ),
+            array(
+                'name' => 'Products price',
+                'desc' => 'Type here product prise',
+                'id'   => $prefix . 'prod_prise',
+                'type' => 'text_money',
+            ),
+        )
+    );
+
+    $meta_boxes[] = array(
         'id'         => 'press_page_metabox',
         'title'      => 'Press Page Options',
         'pages'      => array( 'page', ), // Post type
@@ -607,174 +632,54 @@ function aletheme_metaboxes($meta_boxes) {
         'show_names' => true, // Show field names on the left
         'show_on'    => array( 'key' => 'page-template', 'value' => array('template-about.php'), ), // Specific post templates to display this metabox
         'fields' => array(
+
             array(
-                'name' => 'First member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname1',
-                'type'    => 'text',
+                'name' => 'Quote Description',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'descr_about',
+                'type' => 'textarea',
             ),
             array(
-                'name' => 'Second member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname2',
-                'type'    => 'text',
+                'name' => 'Whose quote is this',
+                'desc' => '',
+                'id'   => $prefix . 'who_qoute',
+                'type' => 'text',
             ),
             array(
-                'name' => 'Third member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname3',
-                'type'    => 'text',
+                'name' => 'Image Upload 1',
+                'desc' => 'Upload Myfoto1',
+                'id'   => $prefix . 'img_about1',
+                'type' => 'file',
+            ),
+                        array(
+                'name' => 'Image Upload 2',
+                'desc' => 'Upload Myfoto2',
+                'id'   => $prefix . 'img_about2',
+                'type' => 'file',
             ),
             array(
-                'name' => 'Fourth member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname4',
-                'type'    => 'text',
+                'name' => 'Title h2',
+                'desc' => 'Мой офис',
+                'id'   => $prefix . 'title_map',
+                'type' => 'text',
             ),
             array(
-                'name' => 'First member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof1',
-                'type'    => 'text',
+                'name' => __('Show Map','aletheme'),
+                'desc' => 'Select to show the Map',
+                'id'   => $prefix . 'map_display',
+                'type' => 'select',
+                'options' => array(
+                    array('name'=>'Show Block','value'=>'show'),
+                    array('name'=>'Hide Block','value'=>'hide'),
+                )
             ),
-            array(
-                'name' => 'Second member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof2',
-                'type'    => 'text',
+                        array(
+                'name' => 'Image Upload 3',
+                'desc' => 'Upload Map width="230" height="180"',
+                'id'   => $prefix . 'img_map',
+                'type' => 'file',
             ),
-            array(
-                'name' => 'Third member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'fourth member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc1',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'Second member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc2',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'Third member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc3',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'Fourth member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc4',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'First member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava1',
-                'type'    => 'file',
-            ),
-            array(
-                'name' => 'Second member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava2',
-                'type'    => 'file',
-            ),
-            array(
-                'name' => 'Third member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava3',
-                'type'    => 'file',
-            ),
-            array(
-                'name' => 'Fourth member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava4',
-                'type'    => 'file',
-            ),
+
         )
     );
 
@@ -823,6 +728,20 @@ function aletheme_get_images_sizes() {
                 'crop'      => true,
             ),
         ),
+        'products' => array(
+            array(
+                'name'      => 'products-min',
+                'width'     => 96,
+                'height'    => 96,
+                'crop'      => true,
+            ),
+            array(
+                'name'      => 'post-minibox',
+                'width'     => 500,
+                'height'    => 200,
+                'crop'      => true,
+            ),
+        ),
 
 
     );
@@ -839,6 +758,7 @@ function aletheme_get_post_types() {
             'config' => array(
                 'public' => true,
                 'menu_position' => 20,
+                'menu_icon' => 'dashicons-format-image',
                 'has_archive'   => true,
                 'supports'=> array(
                     'title',
@@ -849,6 +769,26 @@ function aletheme_get_post_types() {
             ),
             'singular' => 'Gallery',
             'multiple' => 'Galleries',
+            'columns'    => array(
+                'first_image',
+            )
+        ),
+        'products' => array(
+            'config' => array(
+                'public' => true,
+                'menu_position' => 20,
+                'has_archive'   => true,
+                'supports'=> array(
+                    'title',
+                    'editor',
+                    'thumbnail',
+                    'excerpt',
+                    'comments'
+                ),
+                'show_in_nav_menus'=> true,
+            ),
+            'singular' => 'Продукция',
+            'multiple' => 'Продукция',
             'columns'    => array(
                 'first_image',
             )
@@ -869,6 +809,7 @@ function aletheme_get_post_types() {
             'singular' => 'Сервис',
             'multiple' => 'Сервисы'
         ),
+
     );
 }
 
@@ -912,6 +853,7 @@ function aletheme_get_taxonomies() {
             'singular'    => 'Цена сервиса',
             'multiple'    => 'Цены сервисов',
         ),
+
     );
 }
 

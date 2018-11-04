@@ -61,7 +61,7 @@ function ale_init_navigation() {
 	if (function_exists('register_nav_menus')) {
 		register_nav_menus(array(
 			'header_left_menu'	=> __('Header Left Menu', 'aletheme'),
-            'header_right_menu'	=> __('Header Right Menu', 'aletheme'),
+            'left_menu'	=> __('Left Menu', 'aletheme'),
             'footer_menu'	=> __('Footer Menu', 'aletheme'),
             'mobile_menu'	=> __('Mobile Menu', 'aletheme'),
 		));

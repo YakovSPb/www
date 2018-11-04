@@ -99,7 +99,7 @@ header {
 
   /* Top menu */
   .ale_topmenu {
-    nav {
+    .top-nav {
 
       ul {
         margin: 0;
@@ -207,16 +207,20 @@ header {
       padding: 10px;
       margin: 30px 0 0 0;
     }
+    span {
+      display:block;
+      margin:10px 0 10px 10px;
+    }
     p {
-      background: @light_grey;
+      ground: @light_grey;
       border: 1px solid #e7e7e7;
       padding: 10px;
       margin: 0;
     }
 
-    nav {
-
-      ul.aside-menu {
+    .leftnav {
+      width:230px;
+      ul.leftmenu {
         margin: 0;
         padding: 0;
         list-style-type: none;
@@ -360,6 +364,40 @@ header {
 
 /* Production_footer */
 .production_footer {
+position:relative;
+  .pro_list{
+    display:block;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:relative;
+    .item_product{
+      margin:20px 0 0 43px;
+
+      img {
+
+      }
+      .title_product{
+        margin-top:10px;
+
+        h4.product{
+        color:#7E7E7E;
+        font-size:16px;
+        font-weight:300;
+        font-family:Tahoma, sans-serif;
+          padding-bottom:2px;
+          margin-bottom:2px;
+      }
+        span.price{
+          color:#29C5E6;
+          font-size:14px;
+        }
+      }
+
+    }
+  }
+
+
   h2 {
     background:@light_blue;
     font: 30px 'Oswald', sans-serif;
@@ -368,40 +406,62 @@ header {
     padding: 0 10px;
     margin: 0;
   }
-  .pro {
-    figure {
-      display: inline-block;
-      padding: 0;
-      margin: 20px 0 0 43px;
 
-      &:first-child {
-        margin-left:0px;
+
+
+
+    .left {
+      width: 45px;
+      hight: 45px;
+      display: block;
+      border: 2px solid transparent;
+      text-align: center;
+      line-height:45px;
+      font-size:30px;
+      color: rgba(0,0,0,0.3);
+      .transition(all 300ms ease-in-out);
+      .rounded(100%);
+      cursor: pointer;
+      position: absolute;
+      left:-57px;
+      top:95px;
+
+
+      &:hover {
+        .transition(all 300ms ease-in-out);
+      border-color: rgba(0,0,0,0.2);
+        color:#000;
       }
 
-
-      img {
-        display: block;
-        border: 1px solid #fff;
-        outline: 1px solid #c9c9c9;
-      }
-
-
-      figcaption {
-        padding-left: 5px;
-        font-size: 16px;
-        font-weight: 300;
-        margin-top: 5px;
-        color:@dark_grey;
-
-        span {
-          font-size: 14px;
-          color:@light_blue;
-        }
-
-
-      }
     }
-  }
+
+
+
+    .right {
+      width: 45px;
+      hight: 45px;
+      display: block;
+      border: 2px solid transparent;
+      text-align: center;
+      line-height:45px;
+      font-size:30px;
+      color: rgba(0,0,0,0.3);
+      .transition(all 300ms ease-in-out);
+      .rounded(100%);
+      cursor: pointer;
+      position: absolute;
+      right:-57px;
+      top:108px;
+
+
+      &:hover {
+        .transition(all 300ms ease-in-out);
+        border-color: rgba(0,0,0,0.2);
+        color:#000;
+      }
+
+    }
+
 
 }
 .clear {

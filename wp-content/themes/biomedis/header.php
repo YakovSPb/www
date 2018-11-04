@@ -26,7 +26,7 @@
 
         <!-- Top menu -->
         <div class="ale_topmenu">
-            <nav class="top-nav">
+            <div class="top-nav">
                 <?php
                 if(has_nav_menu('header_left_menu')) {
                     wp_nav_menu(array(
@@ -38,7 +38,7 @@
                     ));
                 }
                 ?>
-            </nav>
+            </div>
         </div>
 
         <?php if(is_page_template('page-home.php')){?>

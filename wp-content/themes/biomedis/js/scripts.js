@@ -3,6 +3,8 @@ jQuery(function($) {
 
     // Custom jQuery Code Here
 
+    //Products Slider
+
     $('.portfolioslider').flexslider({
         animation:'slide',
         smoothHeight:true,
@@ -22,6 +24,15 @@ jQuery(function($) {
         nextText:"<i class=\"fa fa-angle-right\"></i>",
         controlNav: false
     });
+
+    $('.pro_list').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        nextArrow: '.production_footer .right',
+        prevArrow: '.production_footer .left'
+    });
+
 
 });
 

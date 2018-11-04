@@ -23,7 +23,7 @@ get_header();
     </div>
     <div class="third_part">
         <span class="label"><i class="fa fa-globe"></i> <?php echo ale_get_option('footer_address_label'); ?></span>
-        <span class="value"><?php echo ale_get_option('footer_address'); ?></span>
+        <span><?php echo ale_get_option('footer_address'); ?></span>
     </div>
     <div class="third_part">
         <span class="label"><i class="fa fa-at"></i> <?php echo ale_get_option('footer_email_label'); ?></span>
