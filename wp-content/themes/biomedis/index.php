@@ -2,7 +2,7 @@
 
     <!-- Content -->
 
-
+FUCK
     <!-- Blog Content -->
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -10,7 +10,6 @@
         <?php endwhile; else: ?>
             <?php ale_part('notfound')?>
         <?php endif; ?>
-
 
 
     <div class="blog-center-align">

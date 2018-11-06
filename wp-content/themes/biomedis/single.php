@@ -1,5 +1,6 @@
 <?php get_header(); ?>
     <!-- Content -->
+fuck of you all
     <div class="blog-center-align">
 
     <!-- Blog Caption -->

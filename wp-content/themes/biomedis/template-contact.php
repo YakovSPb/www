@@ -63,7 +63,7 @@ get_header();
 
     </div>
     <div class="contact_map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f3271aa51fa0fa12b6498369c35972700a874af4ab4bef052542b69f67dba22&amp;source=constructor" width="100%" height="475" frameborder="0"></iframe>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1f3271aa51fa0fa12b6498369c35972700a874af4ab4bef052542b69f67dba22&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
 </div>
 <?php get_footer(); ?>
