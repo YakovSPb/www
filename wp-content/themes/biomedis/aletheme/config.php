@@ -715,7 +715,7 @@ function aletheme_get_images_sizes() {
             ),
         ),
         'post' => array(
-            array(
+          /*  array(
                 'name'      => 'post-thumba',
                 'width'     => 475,
                 'height'    => 295,
@@ -726,6 +726,12 @@ function aletheme_get_images_sizes() {
                 'width'     => 500,
                 'height'    => 200,
                 'crop'      => true,
+            ),    */
+            array(
+                'name'      => 'post-blogsize',
+                'width'     => 675,
+                'height'    => 260,
+                'crop'      => false,
             ),
         ),
         'products' => array(

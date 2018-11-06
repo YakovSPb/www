@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-
+    <div id="heading">
+        <h1>Мой Блог</h1>
+    </div>
     <!-- Content -->
-
-FUCK
     <!-- Blog Content -->
-
+<?php /*?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php ale_part('postpreview' );?>
         <?php endwhile; else: ?>
@@ -123,4 +123,29 @@ FUCK
         </div>
 
     </div>
+
+ <?php */ ?>
+
+<?php get_sidebar();?>
+    <div class="content">
+
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php ale_part('postpreview' );?>
+        <?php endwhile; else: ?>
+            <?php ale_part('notfound')?>
+        <?php endif; ?>
+
+        <?php echo get_previous_posts_link(); ?>
+        <div class="post-pagination">
+            <div class="arrow"><i class="fa fa-angle-left"></i></div>
+            <div class="post-pages-f"><?php ale_page_links();?></div>
+            <div class="arrow"><i class="fa fa-angle-right"></i></div>
+        </div>
+        <?php echo get_next_posts_link(); ?>
+    </div>
+
+
+
+
+    <div class="clear"></div>
 <?php get_footer(); ?>

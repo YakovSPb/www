@@ -180,9 +180,10 @@ function ale_page_links() {
 		'total' => $wp_query->max_num_pages,
 		'current' => $current,
 		'show_all' => true,
-		'type' => 'list',
-		'next_text' => 'Следующие посты',
-		'prev_text' => 'Предыдущие посты'
+		'type' => 'plain',
+		'prev_next' => false,
+		'next_text' => '',
+		'prev_text' => ''
 		);
  
 	if( $wp_rewrite->using_permalinks() )
