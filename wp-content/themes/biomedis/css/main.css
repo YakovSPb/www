@@ -1009,25 +1009,35 @@ footer #social a:hover {
 .post-pagination .post-pages-f a:hover {
   text-decoration: underline;
 }
-.post-pagination .arrow {
-  width: 23px;
-  background: #29c5e6;
-  height: 23px;
-  font-size: 15px;
-  display: block;
-  color: #FFF;
-  font-size: 20px;
-  text-align: center;
-  line-height: 23px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+.post-pagination .arrow-left {
   display: inline-block;
-  margin-right: 30px;
 }
-.post-pagination .arrow:last-child {
+.post-pagination .arrow-left img {
+  margin-top: -10px;
+  margin-right: 40px;
+}
+.post-pagination .arrow-left a {
+  margin-right: 30px;
+  background: url("img/left.png") no-repeat center;
+  line-height: 44px;
+  height: 30px;
+  width: 30px;
+  font-size: 0;
+  display: inline-block;
+}
+.post-pagination .arrow-right {
+  display: inline-block;
+}
+.post-pagination .arrow-right img {
+  margin-top: -10px;
+  margin-left: 40px;
+}
+.post-pagination .arrow-right a {
   margin-left: 30px;
+  background: url("img/right.png") no-repeat center;
+  line-height: 44px;
+  height: 30px;
+  width: 30px;
+  font-size: 0;
+  display: inline-block;
 }

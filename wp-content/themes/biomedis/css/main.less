@@ -1044,24 +1044,39 @@ footer {
      }
    }
 }
-  .arrow {
-    width: 23px;
-    background: @light_blue;
-    height: 23px;
-    font-size:15px;
-    display: block;
-    color: #FFF;
-    font-size: 20px;
-    text-align: center;
-    line-height: 23px;
-    .rounded(100%);
+
+  .arrow-left {
     display:inline-block;
-    margin-right:30px;
 
-
-
-    &:last-child {
-    margin-left:30px;
+    img {
+      margin-top:-10px;
+      margin-right:40px;
+    }
+    a{
+      margin-right:30px;
+      background: url("img/left.png") no-repeat center;
+      line-height: 44px;
+      height:30px;
+      width:30px;
+      font-size:0;
+      display:inline-block;
     }
   }
-}
+  .arrow-right {
+    display:inline-block;
+
+    img {
+      margin-top:-10px;
+      margin-left:40px;
+    }
+    a{
+      margin-left:30px;
+      background: url("img/right.png") no-repeat center;
+      line-height: 44px;
+      height:30px;
+      width:30px;
+      font-size:0;
+      display:inline-block;
+    }
+    }
+  }

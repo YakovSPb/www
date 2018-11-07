@@ -135,13 +135,23 @@
             <?php ale_part('notfound')?>
         <?php endif; ?>
 
-        <?php echo get_previous_posts_link(); ?>
+
         <div class="post-pagination">
-            <div class="arrow"><i class="fa fa-angle-left"></i></div>
+            <div class="arrow-left"><?php if(get_previous_posts_link()){
+                echo get_previous_posts_link();
+                } else {?>
+                <img src="<?php echo get_template_directory_uri() ?>/css/img/left.png" />
+               <?php } ?>
+            </div>
             <div class="post-pages-f"><?php ale_page_links();?></div>
-            <div class="arrow"><i class="fa fa-angle-right"></i></div>
+            <div class="arrow-right"><?php if(get_next_posts_link()){
+                echo get_next_posts_link();
+                } else {?>
+                <img src="<?php echo get_template_directory_uri() ?>/css/img/right.png" />
+                <?php } ?>
+            </div>
         </div>
-        <?php echo get_next_posts_link(); ?>
+
     </div>
 
 
