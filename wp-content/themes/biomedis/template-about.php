@@ -59,11 +59,11 @@ get_header(); ?>
 
                 <div class="item_product cf">
                     <div class="image_product">
-                       <?php echo get_the_post_thumbnail($post->ID, 'products-min'); ?>
+                        <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail($post->ID, 'products-min'); ?></a>
                     </div>
                     <div class="title_product">
                         <?php if(ale_get_meta(prod_title)){?>
-                            <h4 class="product"><?php echo ale_get_meta(prod_title); ?></h4>
+                            <a href="<?php the_permalink(); ?>"><h4 class="product"><?php echo ale_get_meta(prod_title); ?></h4></a>
                         <?php } ?>
                        <?php if(ale_get_meta('prod_prise')) {?>
                             <span class="price"><?php  echo ale_get_meta('prod_prise'); ?></span>

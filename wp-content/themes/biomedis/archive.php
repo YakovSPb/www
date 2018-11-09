@@ -1,116 +1,34 @@
 <?php get_header(); ?>
-    <h1>It's Archive Page</h1>
+    <div id="heading">
+        <h1>Продукция</h1>
+    </div>
+<?php get_sidebar();?>
     <!-- Content -->
-    <div class="blog-center-align">
+    <div class="content-production">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php ale_part('postfull' );?>
+        <?php endwhile; else: ?>
+            <?php ale_part('notfound')?>
+        <?php endif; ?>
 
-        <!-- Blog Caption -->
-        <div class="blog-caption">
-            <div class="blogtitle">
-                <?php if ( is_day() ) : ?>
-                    <?php printf( __( 'Daily Archives: <span>%s</span>', 'aletheme' ), get_the_date() ); ?>
-                <?php elseif ( is_month() ) : ?>
-                    <?php printf( __( 'Monthly Archives: <span>%s</span>', 'aletheme' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'aletheme' ) ) ); ?>
-                <?php elseif ( is_year() ) : ?>
-                    <?php printf( __( 'Yearly Archives: <span>%s</span>', 'aletheme' ), get_the_date( _x( 'Y', 'yearly archives date format', 'aletheme' ) ) ); ?>
-                <?php else : ?>
-                    <?php _e( 'Blog Archives', 'aletheme' ); ?>
-                <?php endif; ?>
+        <div class="hd-block">
+            <a href="#"><img src="images/spain.jpg" alt="" /></a>
+            <div class="hd-block-text">
+                <a href="#"><h3>Spain</h3></a>
+                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+                <div class="block-text-bottom">
+                    <span class="price">$500</span>
+                    <span><img src="images/bus.png" alt="" /></span>
+                    <span class="date">5 days</span>
+                </div>
             </div>
         </div>
 
-        <!-- Blog Line -->
-        <div class="blog-line"></div>
-
-        <!-- Filters Here -->
-        <ul class="blog-filter-line">
-            <li><?php _e('Filter By','aletheme'); ?>:</li>
-            <li>
-                <a class="filter-caption"><p><?php _e('Author','aletheme'); ?></p><span></span></a>
-                <ul>
-
-                    <?php
-                    $args = array(
-                        'orderby'       => 'name',
-                        'order'         => 'ASC',
-                        'number'        => null,
-                        'optioncount'   => false,
-                        'exclude_admin' => false,
-                        'show_fullname' => false,
-                        'hide_empty'    => true,
-                        'echo'          => true,
-                        'style'         => 'list',
-                        'html'          => true );
-
-                    wp_list_authors($args); ?>
-                </ul>
-
-            </li>
-
-            <li>
-                <a class="filter-caption"><p><?php _e('Category','aletheme'); ?></p><span></span></a>
-                <ul>
-                    <?php
-                    $args = array(
-                        'show_option_all'    => '',
-                        'orderby'            => 'name',
-                        'order'              => 'ASC',
-                        'style'              => 'list',
-                        'show_count'         => 0,
-                        'hide_empty'         => 1,
-                        'use_desc_for_title' => 1,
-                        'child_of'           => 0,
-                        'feed'               => '',
-                        'feed_type'          => '',
-                        'feed_image'         => '',
-                        'exclude'            => '',
-                        'exclude_tree'       => '',
-                        'include'            => '',
-                        'hierarchical'       => 1,
-                        'title_li'           => '',
-                        'show_option_none'   => __('No categories','aletheme'),
-                        'number'             => null,
-                        'echo'               => 1,
-                        'depth'              => 0,
-                        'current_category'   => 0,
-                        'pad_counts'         => 0,
-                        'taxonomy'           => 'category',
-                        'walker'             => null
-                    );
-                    wp_list_categories($args); ?>
-                </ul>
-            </li>
-
-            <li>
-                <a class="filter-caption"><p><?php _e('Tags','aletheme'); ?></p><span></span></a>
-                <?php
-                $tags = get_tags();
-                $html = '<ul>';
-                foreach ( $tags as $tag ) {
-                    $tag_link = get_tag_link( $tag->term_id );
-
-                    $html .= "<li><a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
-                    $html .= "{$tag->name}</a></li>";
-                }
-                $html .= '</ul>';
-                echo $html;
-                ?>
-            </li>
-
-            <li class="search">
-                <form role="search" method="get" id="searchform" action="<?php echo site_url()?>" >
-                    <input type="search" class="searchinput" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e('SEARCH', 'aletheme')?>" />
-                    <button type="submit" id="searchsubmit"></button>
-                </form>
-            </li>
-        </ul>
+    </div>
 
         <!-- Blog Content -->
         <div class="blog-content">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <?php ale_part('postpreview' );?>
-            <?php endwhile; else: ?>
-                <?php ale_part('notfound')?>
-            <?php endif; ?>
+
         </div>
 
         <!-- Blog Nav  -->

@@ -1,10 +1,11 @@
 <?php get_header(); ?>
-    <!-- Content -->
-fuck off
+    <div id="heading">
+        <h1><?php the_title();?></h1>
+    </div>
+<?php get_sidebar();?>
     <div class="page-center">
         <div class="content">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="h2" ><?php the_title(); ?></div>
                 <div class="contact-content">
                     <?php ale_part('pagehead');?>
                     <?php the_content(); ?>

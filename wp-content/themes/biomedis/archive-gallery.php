@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
     <!-- Content -->
     <div class="portfolio-center-align">
 

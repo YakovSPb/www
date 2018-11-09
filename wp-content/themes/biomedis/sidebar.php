@@ -18,11 +18,11 @@
         <?php if(ale_get_meta('map_display') == 'show'){?>
             <span class="value2"><?php echo ale_get_option('footer_address'); ?></span>
         <?php } ?>
-        <p>
+
             <?php if(ale_get_meta('img_map')){?>
                 <img src="<?php echo ale_get_meta('img_map') ?>" width="230" height="180" alt="Мой офис"/>
             <?php } ?>
-        </p>
+
 
     </aside>
 </div>

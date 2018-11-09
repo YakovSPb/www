@@ -3,11 +3,11 @@
  * Template Name: Template Contact
  */
 // send contact
-if (isset($_POST['contact'])) {
-	$error = ale_send_contact($_POST['contact']);
-}
 get_header();
 ?>
+    <div id="heading">
+        <h1><?php the_title();?></h1>
+    </div>
 <div class="container contacts">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="page_content">
