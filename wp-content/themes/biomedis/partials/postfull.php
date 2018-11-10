@@ -19,16 +19,6 @@
             <div>
                 <?php the_content(); ?>
             </div>
-            <div class="post-short">
-                <p>
-                    <?php echo get_the_excerpt(); ?>
-
-                </p>
-
-                <span class="date"><?php echo get_the_date();?></span>
-                <a class="read" href="<?php the_permalink(); ?>">Читать все</a>
-
-            </div>
 
         </div>
 

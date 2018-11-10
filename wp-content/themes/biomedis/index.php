@@ -1,12 +1,12 @@
 <?php get_header(); ?>
     <div id="heading">
         <h1>Мой Блог</h1>
+
     </div>
     <!-- Content -->
 
 <?php get_sidebar();?>
     <div class="content">
-
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php ale_part('postpreview' );?>
         <?php endwhile; else: ?>

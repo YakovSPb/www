@@ -8,7 +8,7 @@
 <?php global $query_string; query_posts($query_string.'&posts_per_page=-1');?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="hd-block">
-        <a href="<?php the_permalink(); ?>"> <?php echo get_the_post_thumbnail($post->ID,'products-thumba') ?></a>
+        <a href="<?php the_permalink(); ?>">  <?php if(get_the_post_thumbnail($post->ID,'post-blogsize')){echo get_the_post_thumbnail($post->ID,'products-thumba'); }?></a>
         <div class="hd-block-text">
             <a href="<?php the_permalink(); ?>"><h3><?php echo the_title();?></h3></a>
             <?php echo ale_trim_excerpt(15); ?>

@@ -103,6 +103,7 @@ if($ale_font_two){
     if($ale_h6['color']){ echo "color:".$ale_h6['color'].";"; };
     if($ale_h6['face']){ $h6family =  str_replace ('+',' ',$ale_h6['face']); echo "font-family:".$h6family.";"; };
     ?>
+
     }
 
 

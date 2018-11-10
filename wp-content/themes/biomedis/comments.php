@@ -10,16 +10,11 @@
         // comments are disabled
         return;
     ?>
-<?php elseif (ale_get_option('comments_style') == 'wp') : ?>
-    <!-- Comments -->
-    <div class="blog-comments">
-        <a name="respond"></a>
-        <div class="comments-header">
-            <p class="left"><?php _e('Comments','aletheme'); ?></p>
-            <p class="right"><a id="hide-show-button"><?php _e('Hide / Show Comments','aletheme'); ?></a></p>
-        </div>
 
-        <div id="show-hide">
+    <!-- Comments -->
+    <div class="comments-container">
+        <a name="respond"></a>
+
             <?php if (!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) : ?>
                 <p class="comments-closed"><?php _e('Comments are closed.', 'aletheme'); ?></p>
                 <div class="cf"></div>
@@ -53,8 +48,6 @@
                 <?php endif; // if registration required and not logged in ?>
             <?php endif; ?>
 
-
-
             <?php if (comments_open()) : ?>
                 <a name="comments"></a>
                 <?php if (post_password_required()) : ?>
@@ -73,38 +66,3 @@
             <?php endif; ?>
         </div>
     </div>
-<?php elseif(ale_get_option('comments_style') == 'fb') : ?>
-    <section class="facebook-comments">
-        <div id="fb-comments<?php the_ID()?>" class="fb-comments" data-href="<?php the_permalink()?>" data-num-posts="5"></div>
-    </section>
-<?php elseif(ale_get_option('comments_style') == 'dq') : ?>
-    <section class="disqus-comments">
-        <?php _e('Please download the DISQUS plugin from Wordpress Repository and install it.', 'aletheme'); ?>
-    </section>
-<?php elseif(ale_get_option('comments_style') == 'lf') : ?>
-    <section class="disqus-comments">
-        <?php _e('Please download the Livefyre Realtime Comments plugin from Wordpress Repository and install it.', 'aletheme'); ?>
-    </section>
-<?php elseif(ale_get_option('comments_style') == 'ws') : ?>
-    <section class="defaultwp">
-        <?php if (!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) : ?>
-            <p class="comments-closed"><?php _e('Comments are closed.', 'aletheme'); ?></p>
-        <?php endif; ?>
-        <div id="comments">
-            <?php //wp_list_comments()
-             wp_list_comments(array('callback' => 'aletheme_comment_default', 'max_depth' => 2,'avatar_size' => 80,));
-            ?>
-
-            <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-            <nav id="comment-nav-below" class="navigation" role="navigation">
-                <h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'aletheme' ); ?></h1>
-                <div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'aletheme' ) ); ?></div>
-                <div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'aletheme' ) ); ?></div>
-            </nav>
-            <?php endif; // check for comment navigation ?>
-        </div>
-        <div class="respondbox">
-            <?php comment_form(); ?>
-        </div>
-    </section>
-<?php endif; ?>

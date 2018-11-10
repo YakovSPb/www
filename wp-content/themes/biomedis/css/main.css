@@ -202,6 +202,12 @@ header .ale_topmenu .top-nav .top-menu a {
   color: #fff;
   padding: 10px;
   margin: 30px 0 0 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .as aside span {
   display: block;
@@ -239,6 +245,20 @@ header .ale_topmenu .top-nav .top-menu a {
   padding-left: 10px;
   text-transform: uppercase;
 }
+.as aside .leftnav ul.leftmenu li.current-menu-item {
+  background: #b0e9f5;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.as aside .leftnav ul.leftmenu li.current-menu-item:hover {
+  color: #b2b2b2;
+}
+.as aside .leftnav ul.leftmenu li.current-menu-item a {
+  font-weight: 500;
+}
 .as aside .leftnav ul.leftmenu li:last-child {
   margin-bottom: 0;
 }
@@ -273,6 +293,14 @@ header .ale_topmenu .top-nav .top-menu a {
   margin-left: 20px;
   /* Content */
 }
+.content ul,
+.content ol {
+  margin-left: 15px;
+}
+.content ul li,
+.content ol li {
+  padding-bottom: 10px;
+}
 .content section {
   padding-bottom: 20px;
 }
@@ -282,6 +310,12 @@ header .ale_topmenu .top-nav .top-menu a {
   padding: 10px 20px;
   font-family: 'Times New Roman', sans-serif;
   font-weight: 300;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .content section blockquote p {
   color: #fff;
@@ -393,6 +427,12 @@ header .ale_topmenu .top-nav .top-menu a {
   color: #fff;
   padding: 0 10px;
   margin: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .production_footer .left {
   width: 45px;
@@ -1242,6 +1282,36 @@ footer #social a:hover {
   margin-bottom: 10px;
 }
 .content-production .hd-block .hd-block-text .block-text-bottom {
+  color: #FF6600;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+/* PRODUCTS SINGLE */
+.products-single .hd-block {
+  float: left;
+  width: 38%;
+  height: 51 h4.product0px;
+  border: 1px solid #e7e7e7;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.products-single .hd-block img {
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.products-single .hd-block .block-text-bottom {
   color: #FF6600;
   font-size: 24px;
   margin-left: 20px;

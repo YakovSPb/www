@@ -214,6 +214,7 @@ header {
       color:#fff;
       padding: 10px;
       margin: 30px 0 0 0;
+      .rounded(2px);
     }
     span {
       display:block;
@@ -254,6 +255,21 @@ header {
           padding-left: 10px;
           text-transform: uppercase;
 
+          &.current-menu-item{
+            background: #b0e9f5;
+            &:hover{
+              color:@middle_grey;
+            }
+            .transition(all 300ms ease-in-out);
+            a{
+              font-weight:500;
+
+            }
+
+         }
+
+
+
           &:last-child {
             margin-bottom: 0;
           }
@@ -261,7 +277,13 @@ header {
 
 
 
-          &::before {content: "\f0c8";font: normal normal normal 10px/1 FontAwesome;display: inline-block;float:left;line-height:40px;padding-right:10px}
+          &::before {
+            content: "\f0c8";
+            font: normal normal normal 10px/1 FontAwesome;
+            display: inline-block;
+            float:left;
+            line-height:40px;
+            padding-right:10px}
 
 
 
@@ -297,9 +319,17 @@ header {
 }
 /* Section */
 .content {
-  float:right;
-  width:71%;
-  margin-left:20px;
+  float: right;
+  width: 71%;
+  margin-left: 20px;
+
+  ul, ol {
+    margin-left:15px;
+  li {
+    padding-bottom: 10px;
+  }
+}
+
   section {
     padding-bottom: 20px;
 
@@ -309,6 +339,7 @@ header {
       padding: 10px 20px;
       font-family: 'Times New Roman', sans-serif;
       font-weight: 300;
+     .rounded(8px);
 
       p {
         color:#fff;
@@ -373,6 +404,7 @@ header {
 /* Production_footer */
 .production_footer {
   position:relative;
+
   .pro_list{
     display:block;
     margin:0;
@@ -432,6 +464,7 @@ header {
     color: #fff;
     padding: 0 10px;
     margin: 0;
+    .rounded(2px);
   }
 
 
@@ -1239,5 +1272,37 @@ footer {
         margin-bottom:10px;
       }
     }
+  }
+}
+
+/* PRODUCTS SINGLE */
+.products-single {
+
+
+  .hd-block {
+    float: left;
+    width: 38%;
+    height: 51 h4.product0px;
+    border: 1px solid @grey;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    .rounded(12px);
+
+    img {
+      .rounded(12px 12px 0 0);
+    }
+
+    .block-text-bottom{
+      color:#FF6600;
+      font-size:24px;
+      margin-left:20px;
+      margin-bottom:10px;
+    }
+  }
+
+  .hd-block-text{
+
+
   }
 }

@@ -14,6 +14,11 @@
             <?php endwhile; else: ?>
             <?php ale_part('notfound')?>
             <?php endif; ?>
+
+            <?php if (is_page('commends')) {
+               comments_template();
+            }?>
+
         </div>
     </div>
 <?php get_footer(); ?>
