@@ -1188,6 +1188,17 @@ footer #social a:hover {
 .home_slider {
   margin-top: 30px;
 }
+.home_slider img {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.home_slider a {
+  text-decoration: none;
+}
 .home_slider .flexslider {
   position: relative;
 }
@@ -1249,17 +1260,29 @@ footer #social a:hover {
   text-transform: uppercase;
   line-height: 37px;
   background: rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .home_slider ul.slides li figcaption .mainsliderdesc {
   display: inline-block;
   margin-top: 15px;
   font-family: Oswald;
   font-weight: 300;
-  padding: 0 5px;
+  padding: 5px 5px;
   margin-left: 40px;
   font-size: 20px;
   color: #acacac;
   background: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .home_slider ul.slides li figcaption .sliderlinkmore {
   background-color: #29c5e6;
@@ -1860,4 +1883,7 @@ footer #social a:hover {
   font-size: 24px;
   margin-left: 20px;
   margin-bottom: 10px;
+}
+#vk_comments {
+  margin-bottom: 50px;
 }

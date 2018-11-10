@@ -56,7 +56,6 @@ get_header(); ?>
 
                 if ( $my_production->have_posts()) : while ( $my_production->have_posts()) :  $my_production->the_post();?>
 
-
                 <div class="item_product cf">
                     <div class="image_product">
                         <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail($post->ID, 'products-min'); ?></a>
@@ -76,7 +75,7 @@ get_header(); ?>
 
         <span class="right"><i class="fa fa-angle-right"></i></span>
         </div>
+
         </div>
 
-    <div class="clear"></div>
 <?php get_footer(); ?>

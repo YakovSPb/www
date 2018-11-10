@@ -48,6 +48,9 @@ function ale_enqueue_styles() {
     if(is_page_template('template-about.php')){
         wp_enqueue_style('slick');
     }
+     if(is_page('commends')){
+        wp_enqueue_style('slick');
+    }
 }
 add_action( 'wp_enqueue_scripts', 'ale_enqueue_styles' );
 
@@ -85,11 +88,22 @@ function ale_enqueue_scripts() {
     wp_register_script( 'ale_scripts', THEME_URL . '/js/scripts.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     wp_register_script( 'scrollable', THEME_URL . '/js/libs/scrollable.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     wp_register_script( 'slick', THEME_URL . '/js/libs/slick.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
+    wp_register_script( 'vkcomments', 'https://vk.com/js/api/openapi.js?159', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
 
 
-    if(is_page_template('template-about.php')){
+    if(is_page_template('template-about.php')) {
         wp_enqueue_script('slick');
     }
+
+     if(is_page('commends')) {
+        wp_enqueue_script('slick');
+    }
+
+    if(is_page('commends')){
+        wp_enqueue_script('vkcomments');
+    }
+
+
 
 	wp_enqueue_script( 'jquery-form' );
 	wp_enqueue_script( 'ale_modernizr' );

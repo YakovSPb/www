@@ -7,6 +7,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
+
 </head>
 <body <?php if(is_page_template('page-home.php')){body_class('home');} else{body_class();}; ?> >
 <div id="wrapper">

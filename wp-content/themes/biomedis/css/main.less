@@ -390,6 +390,7 @@ header {
         font-weight: 300;
         margin-top: 5px;
 
+
         span {
           display: block;
           font-size: 14px;
@@ -674,7 +675,13 @@ footer {
 
 /* HOME SLIDERS */
 .home_slider {
+ img {
+ .rounded(8px);
+ }
   margin-top:30px;
+  a {
+    text-decoration:none;
+  }
 
   .flexslider {
     position:relative;
@@ -743,18 +750,20 @@ footer {
           font-weight:300;
           text-transform: uppercase;
           line-height:37px;
-          background:rgba(255,255,255,0.6)
+          background:rgba(255,255,255,0.6);
+          .rounded(3px);
         }
         .mainsliderdesc {
           display:inline-block;
           margin-top:15px;
           font-family: Oswald;
           font-weight:300;
-          padding: 0 5px;
+          padding: 5px 5px;
           margin-left:40px;
           font-size:20px;
           color:#acacac;
-          background:rgba(255,255,255,1)
+          background:rgba(255,255,255,1);
+          .rounded(3px);
         }
 
         .sliderlinkmore {
@@ -1305,4 +1314,8 @@ footer {
 
 
   }
+}
+
+#vk_comments{
+  margin-bottom:50px;
 }

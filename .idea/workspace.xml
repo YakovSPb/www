@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb9c92df-c6c9-4da0-a394-9b36e3c3384d" name="Default Changelist" comment="">
+    <list default="true" id="bb9c92df-c6c9-4da0-a394-9b36e3c3384d" name="Default Changelist" comment="Before doing comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/archive-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/archive-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/css/general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/css/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/css/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/css/reset.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/css/reset.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/partials/css-option.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/partials/css-option.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/partials/postfull.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/partials/postfull.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/partials/postpreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/partials/postpreview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/single-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/single-products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +50,7 @@
           <entry key="jpg" value="1" />
           <entry key="js" value="4" />
           <entry key="less" value="16" />
-          <entry key="php" value="113" />
+          <entry key="php" value="120" />
           <entry key="png" value="8" />
           <entry key="txt" value="1" />
         </counts>
@@ -67,7 +61,7 @@
           <entry key="Image" value="9" />
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="16" />
-          <entry key="PHP" value="113" />
+          <entry key="PHP" value="120" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -76,8 +70,8 @@
         <counts>
           <entry key="css" value="70" />
           <entry key="js" value="212" />
-          <entry key="less" value="12822" />
-          <entry key="php" value="11023" />
+          <entry key="less" value="13024" />
+          <entry key="php" value="11199" />
           <entry key="txt" value="264" />
         </counts>
       </usages-collector>
@@ -85,8 +79,8 @@
         <counts>
           <entry key="CSS" value="70" />
           <entry key="JavaScript" value="212" />
-          <entry key="Less" value="12822" />
-          <entry key="PHP" value="11023" />
+          <entry key="Less" value="13024" />
+          <entry key="PHP" value="11199" />
           <entry key="PLAIN_TEXT" value="264" />
         </counts>
       </usages-collector>
@@ -95,46 +89,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/archive.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/partials/postfull.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="400">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1560">
+              <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -142,8 +109,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/css/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="466" column="5" selection-start-line="466" selection-start-column="5" selection-end-line="466" selection-end-column="5" />
+            <state relative-caret-position="967">
+              <caret line="1315" column="3" lean-forward="true" selection-start-line="1315" selection-start-column="3" selection-end-line="1315" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/archive-gallery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -151,8 +127,53 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+            <state relative-caret-position="40">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2380">
+              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/functions/general.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="1215" column="25" selection-start-line="1215" selection-start-column="8" selection-end-line="1215" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -161,11 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>heading</find>
-      <find>first-child</find>
-      <find>opa</find>
-      <find>read</find>
-      <find>left</find>
       <find>dash</find>
       <find>img</find>
       <find>title</find>
@@ -191,6 +207,11 @@
       <find>#B2B2B2</find>
       <find>border</find>
       <find>rounded</find>
+      <find>main</find>
+      <find>wp_enqueue_script</find>
+      <find>||</find>
+      <find>template-about.php</find>
+      <find>flexslider</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,7 +236,6 @@
         <option value="$PROJECT_DIR$/index1.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/system.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/js/scripts.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/template-award.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/template-contact.php" />
@@ -225,10 +245,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/archive-gallery.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/functions/general.php" />
         <option value="$PROJECT_DIR$/wp-includes/post-template.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/sidebar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/config.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/biomedis/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/archive-products.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/single-products.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/partials/css-option.php" />
@@ -237,7 +255,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/partials/postfull.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/biomedis/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/css/main.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/biomedis/comments.php" />
       </list>
@@ -287,6 +308,23 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="biomedis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="biomedis" type="462c0819:PsiDirectoryNode" />
+              <item name="aletheme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="biomedis" type="462c0819:PsiDirectoryNode" />
+              <item name="aletheme" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,7 +388,7 @@
       <workItem from="1541747218990" duration="8395000" />
       <workItem from="1541770787692" duration="16219000" />
       <workItem from="1541838801544" duration="1909000" />
-      <workItem from="1541840741847" duration="6319000" />
+      <workItem from="1541840741847" duration="12072000" />
     </task>
     <task id="LOCAL-00001" summary="ok man">
       <created>1541155780159</created>
@@ -422,17 +460,24 @@
       <option name="project" value="LOCAL" />
       <updated>1541789632740</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Before doing comments">
+      <created>1541847067988</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1541847067988</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218903000" />
+    <option name="totallyTimeSpent" value="224656000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1044" extended-state="0" />
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29286474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29286474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32972974" />
@@ -484,18 +529,10 @@
           <line>22</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php</url>
-          <line>47</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/404.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/nav-menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -536,13 +573,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/css/libs/slick.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/options/admin/options-interface.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -628,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/functions/general.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="1197" column="11" lean-forward="true" selection-start-line="1197" selection-start-column="11" selection-end-line="1197" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/post-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
@@ -663,27 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/archive-gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/archive-products.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -705,13 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1420">
           <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -771,24 +766,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/page.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/archive-gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/functions/general.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="1215" column="25" selection-start-line="1215" selection-start-column="8" selection-end-line="1215" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/template-about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/aletheme/etc/front.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/css/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="466" column="5" selection-start-line="466" selection-start-column="5" selection-end-line="466" selection-end-column="5" />
+        <state relative-caret-position="967">
+          <caret line="1315" column="3" lean-forward="true" selection-start-line="1315" selection-start-column="3" selection-end-line="1315" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/biomedis/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        <state relative-caret-position="40">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
