@@ -3,18 +3,19 @@
 <div class="blog">
     <div class="entry-blog">
         <!-- SHORT POST #1 -->
-        <div class="blog-post cf">
-            <a href="<?php the_permalink(); ?>">
+        <div class="blog-post">
+
+            <div class="postfullimg">
                 <?php if(get_the_post_thumbnail($post->ID,'post-blogsize')){
                     echo get_the_post_thumbnail($post->ID,'post-blogsize');
                 } else { ?>
                     <img src="<?php echo get_template_directory_uri();?>/css/img/empty.png" widht="675px" height="260px" alt="" />
                 <?php } ?>
-            </a>
+            </div>
 
 
-            <div class="post-title">
-                <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+            <div class="post-title-postfull">
+              <h4 class="posfull_h4"><?php the_title(); ?></h4>
             </div>
             <div>
                 <?php the_content(); ?>

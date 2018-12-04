@@ -2,10 +2,11 @@
     <div id="heading">
         <h1>Продукция</h1>
     </div>
-<?php get_sidebar();?>
+
     <!-- Content -->
+	<?php get_sidebar();?>
     <div class="content-production cf">
-<?php global $query_string; query_posts($query_string.'&posts_per_page=-1');?>
+<?php global $query_string; query_posts($query_string.'&posts_per_page=9');?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="hd-block">
         <a href="<?php the_permalink(); ?>">  <?php if(get_the_post_thumbnail($post->ID,'post-blogsize')){echo get_the_post_thumbnail($post->ID,'products-thumba'); }?></a>
@@ -19,7 +20,7 @@
         </div>
     </div>
 <?php endwhile;  endif;  ?>
-        <!--
+        
         <div class="clear"></div>
     <div class="post-pagination">
         <div class="arrow-left"><?php if(get_previous_posts_link()){
@@ -36,7 +37,7 @@
             <?php } ?>
         </div>
     </div>
--->
+
     </div>
 
 <?php get_footer(); ?>

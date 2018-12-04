@@ -313,7 +313,7 @@ function aletheme_metaboxes($meta_boxes) {
                 'name' => 'First Description',
                 'desc' => 'Insert the text',
                 'id'   => $prefix . 'descr1',
-                'type' => 'textarea',
+                'type' => 'textarea_code',
             ),
             array(
                 'name' => 'Second Description',

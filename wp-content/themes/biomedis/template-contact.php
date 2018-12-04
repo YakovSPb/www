@@ -3,8 +3,12 @@
  * Template Name: Template Contact
  */
 // send contact
+if (isset($_POST['contact'])) {
+    $error = ale_send_contact($_POST['contact']);
+}
 get_header();
 ?>
+
     <div id="heading">
         <h1><?php the_title();?></h1>
     </div>
@@ -53,7 +57,7 @@ get_header();
                 </div>
             </div>
             <div class="item_line">
-                <textarea name="contact[message]"  placeholder="Message..." id="contact-form-message" required="required"><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
+                <textarea name="contact[message]"  placeholder="Сообщение..." id="contact-form-message" required="required"><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
             </div>
             <div class="item_line">
                 <input type="submit" class="submit" value="<?php _e('Отправить', 'aletheme')?>"/>

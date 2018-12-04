@@ -51,7 +51,7 @@ function ale_send_contact($data) {
 	try {
 		
 		if (!wp_verify_nonce($_REQUEST['_wpnonce'])) {
-			throw new Exception('Something went wrong. Please refresh the page and try again.');
+			throw new Exception('Что-то не так. Пожалуйста перегрузите страницу и попробуйте еще раз.');
 		}
 		
 		foreach ($data as $k => $val) {
@@ -59,13 +59,13 @@ function ale_send_contact($data) {
 		}
 		
 		if (!$data['name']) {
-			throw new Exception('Please enter your name.');
+			throw new Exception('Пожалуйсто напишите ваше Имя.');
 		}
 		if (!is_email($data['email'])) {
-			throw new Exception('Please enter a valid email address.');
+			throw new Exception('Пожалуйста введите настоящий email.');
 		}
 		if (!$data['message']) {
-			throw new Exception('Please enter your message.');
+			throw new Exception('Пожалуйста напишите ваше сообщение.');
 		}
 		
 		do_action('ale_contact_form_send', $data);
@@ -107,8 +107,6 @@ function ale_contact_email_send($data) {
 
 			Телефон: {$data['phone']}
 
-			Пол клиента: {$data['genre']}
-
 
 			Сообщение:
 
@@ -124,7 +122,7 @@ function ale_contact_email_send($data) {
 
 		$ale_mail_from->setName($data['name'])->setEmail($data['email'])->addFilters();
 			
-		wp_mail(get_option('admin_email'), $subject, $body);
+		wp_mail(get_option('admin_email','info@prospekt.pro','yakov_dux@bk.ru'), $subject, $body);
 	} catch (Exception $e) {
 		
 	}

@@ -6,7 +6,6 @@ get_header(); ?>
 
 <div class="home_content">
 
-
     <div class="home_about">
         <h2>Обо мне</h2>
         <figure>

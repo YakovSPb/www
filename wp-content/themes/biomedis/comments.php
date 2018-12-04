@@ -1,6 +1,5 @@
 <!-- Put this script tag to the <head> of your page -->
 
-<p>Я буду благодарна за ваши комментарии.</p>
 <script type="text/javascript">
     VK.init({apiId: 6747664, onlyWidgets: true});
 </script>
