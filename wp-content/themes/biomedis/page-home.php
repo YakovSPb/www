@@ -19,17 +19,44 @@ get_header(); ?>
 
     <div class="home-content-production">
         <h2>Продукция</h2>
-        <?php $custom_query = new WP_Query( array( 'post_type' => 'products','posts_per_page'=>'3' ) ); ?>
+        <?php $custom_query = new WP_Query( array( 'post_type' => 'products','posts_per_page'=>'1' ) ); ?>
         <?php if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
             <div class="home-hd-block">
                 <a href="<?php the_permalink(); ?>">  <?php if(get_the_post_thumbnail($post->ID,'post-blogsize')){echo get_the_post_thumbnail($post->ID,'products-thumba'); }?></a>
                 <div class="home-block-text">
                     <a href="<?php the_permalink(); ?>"><h3><?php echo the_title();?></h3></a>
                     <?php echo ale_trim_excerpt(15); ?>
-                    <div class="block-text-bottom">
-                        <span class="price"><?php  echo ale_get_meta('prod_prise'); ?></span>
+                </div>
+                <div class="block-text-bottom">
+                    <span class="price"><?php  echo ale_get_meta('prod_prise'); ?></span>
+                </div>
+            </div>
+        <?php endwhile;  endif;  ?>
 
-                    </div>
+        <?php $custom_query = new WP_Query( array( 'post_type' => 'products2','posts_per_page'=>'1' ) ); ?>
+        <?php if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+            <div class="home-hd-block">
+                <a href="<?php the_permalink(); ?>">  <?php if(get_the_post_thumbnail($post->ID,'post-blogsize')){echo get_the_post_thumbnail($post->ID,'products-thumba'); }?></a>
+                <div class="home-block-text">
+                    <a href="<?php the_permalink(); ?>"><h3><?php echo the_title();?></h3></a>
+                    <?php echo ale_trim_excerpt(15); ?>
+                </div>
+                <div class="block-text-bottom">
+                    <span class="price"><?php  echo ale_get_meta('prod_prise'); ?></span>
+                </div>
+            </div>
+        <?php endwhile;  endif;  ?>
+
+        <?php $custom_query = new WP_Query( array( 'post_type' => 'products3','posts_per_page'=>'1' ) ); ?>
+        <?php if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+            <div class="home-hd-block">
+                <a href="<?php the_permalink(); ?>">  <?php if(get_the_post_thumbnail($post->ID,'post-blogsize')){echo get_the_post_thumbnail($post->ID,'products-thumba'); }?></a>
+                <div class="home-block-text">
+                    <a href="<?php the_permalink(); ?>"><h3><?php echo the_title();?></h3></a>
+                    <?php echo ale_trim_excerpt(15); ?>
+                </div>
+                <div class="block-text-bottom">
+                    <span class="price"><?php  echo ale_get_meta('prod_prise'); ?></span>
                 </div>
             </div>
         <?php endwhile;  endif;  ?>

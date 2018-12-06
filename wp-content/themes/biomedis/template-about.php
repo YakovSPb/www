@@ -49,7 +49,7 @@ get_header(); ?>
                <?php
 
                 $args = array(
-                    'post_type' =>'products',
+                    'post_type' =>'products2',
                     'posts_per_page' => -1
                 );
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div id="heading">
-        <h1>Домашняя Физиотерапия</h1>
+        <h1>Питание и вода</h1>
     </div>
 
     <!-- Content -->

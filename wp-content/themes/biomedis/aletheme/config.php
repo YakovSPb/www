@@ -362,6 +362,81 @@ function aletheme_metaboxes($meta_boxes) {
     );
 
     $meta_boxes[] = array(
+        'id'         => 'products2_page_metabox',
+        'title'      => 'Products2 Meta Options',
+        'pages'      => array( 'products2', ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+      //  'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+
+        'fields' => array(
+            array(
+                'name' => 'Products2 short title',
+                'desc' => 'Type here the short title',
+                'id'   => $prefix . 'prod_title',
+                'type' => 'text_small',
+            ),
+            array(
+                'name' => 'Products2 price',
+                'desc' => 'Type here product prise',
+                'id'   => $prefix . 'prod_prise',
+                'type' => 'text_money',
+            ),
+        )
+    );
+
+    $meta_boxes[] = array(
+        'id'         => 'products3_page_metabox',
+        'title'      => 'Products3 Meta Options',
+        'pages'      => array( 'products3', ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+      //  'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+
+        'fields' => array(
+            array(
+                'name' => 'Products3 short title',
+                'desc' => 'Type here the short title',
+                'id'   => $prefix . 'prod_title',
+                'type' => 'text_small',
+            ),
+            array(
+                'name' => 'Products3 price',
+                'desc' => 'Type here product prise',
+                'id'   => $prefix . 'prod_prise',
+                'type' => 'text_money',
+            ),
+        )
+    );
+
+    $meta_boxes[] = array(
+        'id'         => 'products4_page_metabox',
+        'title'      => 'Products4 Meta Options',
+        'pages'      => array( 'products4', ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+      //  'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+
+        'fields' => array(
+            array(
+                'name' => 'Products4 short title',
+                'desc' => 'Type here the short title',
+                'id'   => $prefix . 'prod_title',
+                'type' => 'text_small',
+            ),
+            array(
+                'name' => 'Products4 price',
+                'desc' => 'Type here product prise',
+                'id'   => $prefix . 'prod_prise',
+                'type' => 'text_money',
+            ),
+        )
+    );
+
+    $meta_boxes[] = array(
         'id'         => 'press_page_metabox',
         'title'      => 'Press Page Options',
         'pages'      => array( 'page', ), // Post type
@@ -760,29 +835,12 @@ function aletheme_get_images_sizes() {
  */
 function aletheme_get_post_types() {
     return array(
-        'gallery' => array(
-            'config' => array(
-                'public' => true,
-                'menu_position' => 20,
-                'menu_icon' => 'dashicons-format-image',
-                'has_archive'   => true,
-                'supports'=> array(
-                    'title',
-                    'editor',
-                    'thumbnail',
-                ),
-                'show_in_nav_menus'=> true,
-            ),
-            'singular' => 'Gallery',
-            'multiple' => 'Galleries',
-            'columns'    => array(
-                'first_image',
-            )
-        ),
+
         'products' => array(
             'config' => array(
                 'public' => true,
-                'menu_position' => 20,
+                'menu_position' => 15,
+                'menu_icon' => 'dashicons-universal-access',
                 'has_archive'   => true,
                 'supports'=> array(
                     'title',
@@ -793,28 +851,76 @@ function aletheme_get_post_types() {
                 ),
                 'show_in_nav_menus'=> true,
             ),
-            'singular' => 'Продукция',
-            'multiple' => 'Продукция',
+            'singular' => 'ФИЗИОТЕРАПИЯ',
+            'multiple' => 'ФИЗИОТЕРАПИЯ',
             'columns'    => array(
                 'first_image',
             )
         ),
-        'services' => array(
+        'products2' => array(
             'config' => array(
                 'public' => true,
-                'menu_position' => 20,
-                'menu_icon' => 'dashicons-format-audio',
+                'menu_position' => 16,
+                'menu_icon' => 'dashicons-image-filter',
                 'has_archive'   => true,
                 'supports'=> array(
                     'title',
                     'editor',
                     'thumbnail',
+                    'excerpt',
+                    'comments'
                 ),
                 'show_in_nav_menus'=> true,
             ),
-            'singular' => 'Сервис',
-            'multiple' => 'Сервисы'
+            'singular' => 'ПИТАНИЕ И ВОДА',
+            'multiple' => 'ПИТАНИЕ И ВОДА',
+            'columns'    => array(
+                'first_image',
+            )
         ),
+        'products3' => array(
+            'config' => array(
+                'public' => true,
+                'menu_position' => 17,
+                'menu_icon' => 'dashicons-carrot',
+                'has_archive'   => true,
+                'supports'=> array(
+                    'title',
+                    'editor',
+                    'thumbnail',
+                    'excerpt',
+                    'comments'
+                ),
+                'show_in_nav_menus'=> true,
+            ),
+            'singular' => 'БИОДОБАВКА',
+            'multiple' => 'БИОДОБАВКИ',
+            'columns'    => array(
+                'first_image',
+            )
+        ),
+        'products4' => array(
+            'config' => array(
+                'public' => true,
+                'menu_position' => 18,
+                'menu_icon' => 'dashicons-admin-appearance',
+                'has_archive'   => true,
+                'supports'=> array(
+                    'title',
+                    'editor',
+                    'thumbnail',
+                    'excerpt',
+                    'comments'
+                ),
+                'show_in_nav_menus'=> true,
+            ),
+            'singular' => 'КОСМЕТИКА',
+            'multiple' => 'КОСМЕТИКА',
+            'columns'    => array(
+                'first_image',
+            )
+        ),
+
 
     );
 }
